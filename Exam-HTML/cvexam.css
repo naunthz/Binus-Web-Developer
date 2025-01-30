@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #b1e8fc;
+    padding: 20px;
+    margin: 30px 0;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile-img {
+    width: 180px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.role {
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Lucida Sans', Geneva, sans-serif;
+    color: #000000;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    color: #000000;
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+.cvport-container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.btn-download {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-download:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+.main-content {
+    flex: 1;
+    padding: 10px;
+    background: #c0f3ff;
+    border-radius: 10px;
+}
+
+.tabs {
+    max-width: 800px;
+}
+
+.tabs {
+    max-width: 800px;
+}
+.tab-label {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.tab-label:hover {
+    background-color: #e0e0e0;
+}
+  
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"]:checked + .tab-label {
+    background-color: #4a60ff;
+    color: #ffffff;
+}  
+.tab-content {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+.education h1 {
+    margin-bottom: 8px;
+}
+.education p {
+    font-size: 20px;
+    color: #000000;
+    margin: 2px 0;
+    line-height: 1.2;
+}
+.education ul {
+    list-style: circle;
+    padding-left: 20px;
+}
+#tab-about:checked ~ #about,
+#tab-experience:checked ~ #experience,
+#tab-portfolio:checked ~ #portfolio,
+#tab-certificate:checked ~ #certificate {
+    display: block;
+}
+/* Progress Bar Styles */
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 8px;
+    margin-top: 5px;
+}
+.progress {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #89d0de;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
