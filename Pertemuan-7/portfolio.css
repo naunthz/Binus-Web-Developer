@@ -1,5 +1,4 @@
 /* Masih DI TEST */
-/* Buat Background */
 body {
     background-color: beige;
     opacity: 0.5;
@@ -35,6 +34,7 @@ header {
     font-weight: bold;
     color: purple;
 }
+/* Buat Background paling atas */
 nav ul {
     list-style: none;
     padding: 0;
@@ -90,4 +90,4 @@ nav ul li a {
     text-decoration: none;
     margin-top: 20px;
     border-radius: 5px;
-}x
+}
